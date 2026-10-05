@@ -21,6 +21,102 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- 深色毛玻璃主题 -->
+	<style>
+		html, body {
+			background: linear-gradient(135deg, #0d0d14 0%, #1a1a2e 50%, #0f0f1a 100%) !important;
+			color: #e8e8f0;
+		}
+		.gallery-section {
+			background: transparent !important;
+			padding-top: 120px !important;
+		}
+		/* 顶部毛玻璃标题栏 */
+		.gallery-header {
+			position: fixed !important;
+			top: 0; left: 0; right: 0;
+			z-index: 100;
+			background: rgba(20, 22, 35, 0.55) !important;
+			backdrop-filter: blur(24px) saturate(180%);
+			-webkit-backdrop-filter: blur(24px) saturate(180%);
+			-webkit-mask-image: none !important;
+			mask-image: none !important;
+			padding: 20px 40px 18px !important;
+			margin-bottom: 30px !important;
+			border-bottom: 1px solid rgba(255,255,255,0.08);
+			box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+		}
+		.gh-title h4 {
+			color: #fff !important;
+			letter-spacing: 4px;
+			font-weight: 600;
+		}
+		.gh-title .gh-icon {
+			color: #a78bfa !important;
+			background: rgba(167,139,250,0.15) !important;
+			border: 1px solid rgba(167,139,250,0.3);
+		}
+		.gh-sub {
+			color: rgba(255,255,255,0.5) !important;
+			letter-spacing: 2px;
+		}
+		/* 筛选按钮毛玻璃 */
+		.gallery-filter li {
+			background: rgba(255,255,255,0.06) !important;
+			color: rgba(255,255,255,0.7) !important;
+			border: 1px solid rgba(255,255,255,0.1);
+			border-radius: 20px !important;
+			padding: 6px 18px !important;
+			margin: 4px !important;
+			font-size: 13px !important;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+		.gallery-filter li:hover {
+			background: rgba(167,139,250,0.2) !important;
+			color: #fff !important;
+			border-color: rgba(167,139,250,0.5);
+		}
+		.gallery-filter li.active {
+			background: linear-gradient(135deg, #a78bfa, #ec4899) !important;
+			color: #fff !important;
+			border-color: transparent;
+			box-shadow: 0 4px 15px rgba(167,139,250,0.4);
+		}
+		/* 作品卡片 */
+		.gallery-item {
+			border-radius: 12px !important;
+			overflow: hidden;
+			box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+			transition: transform 0.4s ease, box-shadow 0.4s ease;
+		}
+		.gallery-item:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 16px 40px rgba(167,139,250,0.3);
+		}
+		.gallery-item img {
+			transition: transform 0.6s ease;
+		}
+		.gallery-item:hover img {
+			transform: scale(1.06);
+		}
+		/* 悬浮层毛玻璃 */
+		.gallery-item .gi-hover {
+			background: rgba(15,15,25,0.7) !important;
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
+		}
+		.gallery-item .gi-hover h6 {
+			color: #fff !important;
+		}
+		/* 侧边菜单按钮 */
+		.menu-switch {
+			background: rgba(20,22,35,0.6) !important;
+			backdrop-filter: blur(16px);
+			-webkit-backdrop-filter: blur(16px);
+			border: 1px solid rgba(255,255,255,0.1);
+		}
+	</style>
 </head>
 <body>
 	<!-- Page Preloder -->
