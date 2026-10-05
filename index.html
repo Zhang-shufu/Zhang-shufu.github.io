@@ -22,6 +22,42 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- 深色毛玻璃主题 -->
+	<style>
+		html, body { background: #0d0d14 !important; }
+		.hero-section::before {
+			content: ''; position: absolute; inset: 0; z-index: 1;
+			background: linear-gradient(180deg, rgba(13,13,20,0.3) 0%, rgba(13,13,20,0.55) 100%);
+			pointer-events: none;
+		}
+		.pa-tag {
+			background: rgba(167,139,250,0.25) !important;
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(167,139,250,0.5) !important;
+			color: #fff !important;
+			border-radius: 20px;
+			padding: 6px 18px;
+			letter-spacing: 2px;
+		}
+		.pa-text h2 { color: #fff !important; text-shadow: 0 4px 20px rgba(0,0,0,0.6); letter-spacing: 4px; }
+		.pa-author img { border-radius: 50%; border: 2px solid rgba(255,255,255,0.3); }
+		.pa-author h4 { color: rgba(255,255,255,0.9) !important; }
+		.menu-switch { background: rgba(20,22,35,0.6) !important; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); }
+		.side-menu-wrapper { background: linear-gradient(160deg, rgba(20,22,38,0.95) 0%, rgba(15,15,28,0.98) 100%) !important; }
+		.sm-header { background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 24px 30px; }
+		.site-logo img { border-radius: 12px; box-shadow: 0 4px 20px rgba(167,139,250,0.3); }
+		.menu-close { background: rgba(255,255,255,0.1); color: #fff; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
+		.main-menu { padding: 30px 20px; }
+		.main-menu ul li a { color: rgba(255,255,255,0.55) !important; font-size: 18px !important; letter-spacing: 3px; padding: 14px 20px; border-radius: 12px; transition: all 0.3s; display: block; }
+		.main-menu ul li a:hover { color: #fff !important; background: rgba(167,139,250,0.12); padding-left: 28px; }
+		.main-menu ul li a.active { color: #fff !important; background: linear-gradient(135deg, rgba(167,139,250,0.25), rgba(236,72,153,0.2)); border-left: 3px solid #a78bfa; }
+		.sm-footer { background: rgba(255,255,255,0.03); border-top: 1px solid rgba(255,255,255,0.08); padding: 24px 30px; }
+		.sm-socail a.cn-social { display: inline-flex; width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.08); align-items: center; justify-content: center; margin: 0 6px; transition: all 0.3s; border: 1px solid rgba(255,255,255,0.1); }
+		.sm-socail a.cn-social:hover { background: rgba(167,139,250,0.3); transform: translateY(-3px); }
+		.sm-socail a.cn-social img { width: 24px; height: 24px; border-radius: 0; }
+		.copyright-text p { color: rgba(255,255,255,0.35) !important; font-size: 12px; }
+		.copyright-text a { color: rgba(167,139,250,0.7) !important; }
+	</style>
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -76,52 +112,52 @@
 	<section class="hero-section">
 		<div class="pana-accordion" id="accordion">
     		<div class="pana-accordion-wrap">
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/5.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/gallery/tlc-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">婚礼纪实</div>
 						<h2>婚礼纪实</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/1.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/gallery/qp-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">人像写真</div>
 						<h2>人像写真</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/2.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/gallery/wb-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">会议活动</div>
 						<h2>会议活动</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/3.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/gallery/qz-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">亲子时光</div>
 						<h2>亲子时光</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/4.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/gallery/qj-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">街拍纪实</div>
 						<h2>街拍纪实</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
@@ -130,52 +166,52 @@
 		</div>
 		<div class="hero-slider-warp">
 			<div class="hero-slider owl-carousel">
-				<div class="hero-item set-bg" data-setbg="img/hero/5.jpg">
+				<div class="hero-item set-bg" data-setbg="img/gallery/tlc-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">婚礼纪实</div>
 						<h2>婚礼纪实</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="hero-item set-bg" data-setbg="img/hero/1.jpg">
+				<div class="hero-item set-bg" data-setbg="img/gallery/qp-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">人像写真</div>
 						<h2>人像写真</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="hero-item set-bg" data-setbg="img/hero/2.jpg">
+				<div class="hero-item set-bg" data-setbg="img/gallery/wb-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">会议活动</div>
 						<h2>会议活动</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="hero-item set-bg" data-setbg="img/hero/3.jpg">
+				<div class="hero-item set-bg" data-setbg="img/gallery/qz-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">亲子时光</div>
 						<h2>亲子时光</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
 				</div>
-				<div class="hero-item set-bg" data-setbg="img/hero/4.jpg">
+				<div class="hero-item set-bg" data-setbg="img/gallery/qj-1.jpg">
 					<div class="pa-text">
 						<div class="pa-tag">街拍纪实</div>
 						<h2>街拍纪实</h2>
 						<div class="pa-author">
-							<img src="img/Hero/author.jpg" alt="">
+							<img src="img/gallery/author.jpg" alt="">
 							<h4>摄影师小甫</h4>
 						</div>
 					</div>
