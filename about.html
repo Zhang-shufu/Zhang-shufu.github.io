@@ -22,6 +22,63 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- 深色毛玻璃主题 -->
+	<style>
+		html, body {
+			background: linear-gradient(135deg, #0d0d14 0%, #1a1a2e 50%, #0f0f1a 100%) !important;
+			color: #e8e8f0;
+		}
+		.about-section { background: transparent !important; padding-top: 80px !important; padding-bottom: 60px; }
+		.about-left, .about-right {
+			background: rgba(255,255,255,0.04) !important;
+			backdrop-filter: blur(20px);
+			-webkit-backdrop-filter: blur(20px);
+			border: 1px solid rgba(255,255,255,0.08);
+			border-radius: 20px;
+			padding: 30px;
+			box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+		}
+		.about-img img { border-radius: 16px; box-shadow: 0 8px 24px rgba(167,139,250,0.25); }
+		.profile-text h2 { color: #fff !important; letter-spacing: 2px; }
+		.profile-text h2 strong {
+			background: linear-gradient(135deg, #a78bfa, #ec4899);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		.profile-text p { color: rgba(255,255,255,0.6) !important; line-height: 1.9; }
+		.profile-btn {
+			background: linear-gradient(135deg, #a78bfa, #ec4899) !important;
+			color: #fff !important; border: none; border-radius: 25px; padding: 10px 30px;
+			box-shadow: 0 4px 15px rgba(167,139,250,0.4);
+			transition: all 0.3s;
+		}
+		.profile-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(236,72,153,0.5); color:#fff !important; }
+		.profile-email { color: rgba(255,255,255,0.5) !important; }
+		.about-text h2 { color: #fff !important; letter-spacing: 3px; position: relative; padding-left: 16px; }
+		.about-text h2::before {
+			content: ''; position: absolute; left: 0; top: 6px; bottom: 6px;
+			width: 4px; border-radius: 2px;
+			background: linear-gradient(180deg, #a78bfa, #ec4899);
+		}
+		.about-text p { color: rgba(255,255,255,0.6) !important; line-height: 1.9; }
+		.circle-item h4 { color: rgba(255,255,255,0.8) !important; margin-top: 12px; letter-spacing: 2px; }
+		.menu-switch { background: rgba(20,22,35,0.6) !important; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); }
+		.side-menu-wrapper { background: linear-gradient(160deg, rgba(20,22,38,0.95) 0%, rgba(15,15,28,0.98) 100%) !important; }
+		.sm-header { background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 24px 30px; }
+		.site-logo img { border-radius: 12px; box-shadow: 0 4px 20px rgba(167,139,250,0.3); }
+		.menu-close { background: rgba(255,255,255,0.1); color: #fff; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
+		.main-menu { padding: 30px 20px; }
+		.main-menu ul li a { color: rgba(255,255,255,0.55) !important; font-size: 18px !important; letter-spacing: 3px; padding: 14px 20px; border-radius: 12px; transition: all 0.3s; display: block; }
+		.main-menu ul li a:hover { color: #fff !important; background: rgba(167,139,250,0.12); padding-left: 28px; }
+		.main-menu ul li a.active { color: #fff !important; background: linear-gradient(135deg, rgba(167,139,250,0.25), rgba(236,72,153,0.2)); border-left: 3px solid #a78bfa; }
+		.sm-footer { background: rgba(255,255,255,0.03); border-top: 1px solid rgba(255,255,255,0.08); padding: 24px 30px; }
+		.sm-socail a.cn-social { display: inline-flex; width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.08); align-items: center; justify-content: center; margin: 0 6px; transition: all 0.3s; border: 1px solid rgba(255,255,255,0.1); }
+		.sm-socail a.cn-social:hover { background: rgba(167,139,250,0.3); transform: translateY(-3px); }
+		.sm-socail a.cn-social img { width: 24px; height: 24px; border-radius: 0; }
+		.copyright-text p { color: rgba(255,255,255,0.35) !important; font-size: 12px; }
+		.copyright-text a { color: rgba(167,139,250,0.7) !important; }
+	</style>
 </head>
 <body>
 	<!-- Page Preloder -->
