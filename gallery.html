@@ -224,7 +224,6 @@
 				<li><a href="index.html">首页</a></li>
 				<li><a href="about.html">关于我</a></li>
 				<li><a href="gallery.html" class="active">作品集</a></li>
-				<li><a href="contact.html">联系我</a></li>
 			</ul>
 		</nav>
 		<div class="sm-footer">
@@ -2167,7 +2166,7 @@
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/pana-accordion.js"></script>
 		<script src="js/main.js"></script>
-	<script src="js/lightbox.js"></script>
+	<!-- <script src="js/lightbox.js"></script> -->
 
 <!-- 微信二维码弹窗 -->
 <div class="wechat-modal" id="wechat-modal" onclick="hideWechat()">
@@ -2180,6 +2179,25 @@
 <script>
 function showWechat(){ document.getElementById('wechat-modal').style.display = 'flex'; }
 function hideWechat(){ document.getElementById('wechat-modal').style.display = 'none'; }
+</script>
+<style>
+	.gallery-header { transition: all 0.3s ease; }
+	.gallery-header.shrink { padding: 8px 20px 8px !important; }
+	.gallery-header.shrink .gh-sub { display: none !important; }
+	.gallery-header.shrink .gh-title h4 { font-size: 18px !important; }
+	.gallery-header.shrink .gh-title .gh-icon { transform: scale(0.8); }
+	.gallery-header.shrink .gallery-filter li { padding: 3px 12px !important; font-size: 11px !important; }
+</style>
+<script>
+window.addEventListener('scroll', function() {
+	var h = document.querySelector('.gallery-header');
+	if (window.scrollY > 60) { h.classList.add('shrink'); }
+	else { h.classList.remove('shrink'); }
+});
+// 去掉弹窗，点照片无反应
+document.addEventListener('click', function(e) {
+	if (e.target.closest('.gallery-link')) { e.preventDefault(); }
+});
 </script>
 </body>
 </html>
