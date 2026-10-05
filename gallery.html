@@ -116,12 +116,10 @@
 			color: #fff !important;
 		}
 		/* 侧边菜单按钮 */
-		.menu-switch {
-			background: rgba(20,22,35,0.6) !important;
-			backdrop-filter: blur(16px);
-			-webkit-backdrop-filter: blur(16px);
-			border: 1px solid rgba(255,255,255,0.1);
-		}
+		.menu-wrapper { background: transparent !important; width: auto !important; height: auto !important; position: fixed !important; left: 20px; top: 20px; z-index: 999; }
+		.menu-switch { background: rgba(20,22,35,0.6) !important; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px !important; width: 48px !important; height: 48px !important; display: flex !important; align-items: center; justify-content: center; }
+		.menu-social-warp { position: fixed !important; left: 20px; top: 50%; transform: translateY(-50%); }
+		.menu-social { display: flex; flex-direction: column; gap: 12px; }
 		/* 侧边菜单整体深色毛玻璃 */
 		.side-menu-wrapper {
 			background: linear-gradient(160deg, rgba(20,22,38,0.95) 0%, rgba(15,15,28,0.98) 100%) !important;
@@ -189,6 +187,8 @@
 		.sm-socail a.cn-social img { width: 24px; height: 24px; border-radius: 0; }
 		.copyright-text p { color: rgba(255,255,255,0.35) !important; font-size: 12px; }
 		.copyright-text a { color: rgba(167,139,250,0.7) !important; }
+	
+		.hero-section, .about-section, .gallery-section, .contact-section { margin-left: 0 !important; }
 	</style>
 </head>
 <body>
