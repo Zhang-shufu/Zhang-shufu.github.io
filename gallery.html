@@ -116,6 +116,73 @@
 			-webkit-backdrop-filter: blur(16px);
 			border: 1px solid rgba(255,255,255,0.1);
 		}
+		/* 侧边菜单整体深色毛玻璃 */
+		.side-menu-wrapper {
+			background: linear-gradient(160deg, rgba(20,22,38,0.95) 0%, rgba(15,15,28,0.98) 100%) !important;
+			backdrop-filter: blur(24px);
+			-webkit-backdrop-filter: blur(24px);
+		}
+		.sm-header {
+			background: rgba(255,255,255,0.04);
+			border-bottom: 1px solid rgba(255,255,255,0.08);
+			padding: 24px 30px;
+		}
+		.site-logo img {
+			border-radius: 12px;
+			box-shadow: 0 4px 20px rgba(167,139,250,0.3);
+		}
+		.menu-close {
+			background: rgba(255,255,255,0.1);
+			color: #fff;
+			border-radius: 50%;
+			width: 36px; height: 36px;
+			display: flex; align-items: center; justify-content: center;
+			transition: all 0.3s;
+		}
+		.menu-close:hover { background: rgba(167,139,250,0.3); }
+		.main-menu { padding: 30px 20px; }
+		.main-menu ul li a {
+			color: rgba(255,255,255,0.55) !important;
+			font-size: 18px !important;
+			letter-spacing: 3px;
+			padding: 14px 20px;
+			border-radius: 12px;
+			transition: all 0.3s ease;
+			display: block;
+		}
+		.main-menu ul li a:hover {
+			color: #fff !important;
+			background: rgba(167,139,250,0.12);
+			padding-left: 28px;
+		}
+		.main-menu ul li a.active {
+			color: #fff !important;
+			background: linear-gradient(135deg, rgba(167,139,250,0.25), rgba(236,72,153,0.2));
+			border-left: 3px solid #a78bfa;
+		}
+		.sm-footer {
+			background: rgba(255,255,255,0.03);
+			border-top: 1px solid rgba(255,255,255,0.08);
+			padding: 24px 30px;
+		}
+		.sm-socail a.cn-social {
+			display: inline-flex;
+			width: 48px; height: 48px;
+			border-radius: 50%;
+			background: rgba(255,255,255,0.08);
+			backdrop-filter: blur(10px);
+			align-items: center; justify-content: center;
+			margin: 0 6px;
+			transition: all 0.3s;
+			border: 1px solid rgba(255,255,255,0.1);
+		}
+		.sm-socail a.cn-social:hover {
+			background: rgba(167,139,250,0.3);
+			transform: translateY(-3px);
+		}
+		.sm-socail a.cn-social img { width: 24px; height: 24px; border-radius: 0; }
+		.copyright-text p { color: rgba(255,255,255,0.35) !important; font-size: 12px; }
+		.copyright-text a { color: rgba(167,139,250,0.7) !important; }
 	</style>
 </head>
 <body>
