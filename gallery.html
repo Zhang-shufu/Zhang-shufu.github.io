@@ -138,13 +138,16 @@
 			box-shadow: 0 4px 20px rgba(167,139,250,0.3);
 		}
 		.menu-close {
-			background: rgba(255,255,255,0.1);
-			color: #fff;
+			background: rgba(255,255,255,0.12) !important;
+			color: #fff !important;
 			border-radius: 50%;
-			width: 36px; height: 36px;
-			display: flex; align-items: center; justify-content: center;
-			transition: all 0.3s;
+			width: 44px !important; height: 44px !important;
+			padding: 0 !important;
+			display: flex !important; align-items: center !important; justify-content: center !important;
+			line-height: 1 !important; font-size: 20px !important;
+			flex-shrink: 0;
 		}
+		.menu-close i { line-height: 1; margin: 0; padding: 0; display: block; }
 		.menu-close:hover { background: rgba(167,139,250,0.3); }
 		.main-menu { padding: 30px 20px; }
 		.main-menu ul li a {
